@@ -132,6 +132,17 @@ while (i <= 100) {
  *Pass in a number value to invoke your function. Console.log donutBought.
 */ 
 
+var money = 100
+var donutPrice = 5;
+ var donutBought = 0;
 
+ function buyDonut(budget) {
+	 while (budget >= donutPrice) {
+		 budget = budget - donutPrice;
+		 donutBought++
+	 }
+ }
+buyDonut(money);
+ console.log("With $ " + money + " I bought " + donutBought + " donuts.");
 
 
